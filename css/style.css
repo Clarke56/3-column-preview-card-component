@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Big+Shoulders+Display:wght@700&display=swap');
+
+/* Primary colors 
+Bright orange:hsl(31, 77%, 52%);
+Dark cyan: hsl(184, 100%, 22%);
+Very dark cyan: hsl(179, 100%, 13%);
+
+Neutral colors
+
+Transparent white (paragraphs): hsla(0, 0%, 100%, 0.75);
+Very light gray (background, headings, buttons): hsl(0, 0%, 95%);
+*/
+
+body {
+  background-color: hsl(0, 0%, 95%);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+
+  margin: auto;
+  margin-bottom: 30px;
+  padding-top: 200px;
+  width: 60%;
+}
+
+h2 {
+  color: hsl(0, 0%, 100%);
+  margin: 2rem 0;
+  font-family: 'Big Shoulders Display', cursive;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+p {
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 0.8rem;
+  height: 80px;
+  color: hsla(0, 0%, 100%, 0.75);
+  margin: 1rem 0;
+  margin-bottom: 80px;
+  opacity: 0.8;
+}
+.col-1 {
+  background-color: hsl(31, 77%, 52%);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 2rem;
+}
+
+.col-2 {
+  background-color: hsl(184, 100%, 22%);
+  padding: 2rem;
+}
+
+.col-3 {
+  background-color: hsl(179, 100%, 13%);
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 2rem;
+}
+
+a.btn {
+  background-color: hsl(0, 0%, 100%);
+  font-size: 0.8rem;
+  font-family: 'Lexend Deca', sans-serif;
+  text-decoration: none;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+a.btn:hover {
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: 300ms ease-in-out;
+}
+
+.btn-color1 {
+  color: hsl(31, 77%, 52%);
+}
+
+.btn-color1:hover {
+  color: hsla(0, 0%, 100%, 0.75);
+  background-color: hsl(31, 77%, 52%);
+  border: solid 1px hsla(0, 0%, 100%, 0.75);
+}
+
+.btn-color2 {
+  color: hsl(184, 100%, 22%);
+}
+
+.btn-color2:hover {
+  color: hsla(0, 0%, 100%, 0.75);
+  background-color: hsl(184, 100%, 22%);
+  border: solid 1px hsla(0, 0%, 100%, 0.75);
+}
+
+.btn-color3 {
+  color: hsl(179, 100%, 13%);
+}
+
+.btn-color3:hover {
+  color: hsla(0, 0%, 100%, 0.75);
+  background-color: hsl(179, 100%, 13%);
+  border: solid 1px hsla(0, 0%, 100%, 0.75);
+}
+
+@media (max-width: 1025px) {
+  a.btn {
+    background-color: hsl(0, 0%, 100%);
+    font-size: 0.8rem;
+    font-family: 'Lexend Deca', sans-serif;
+    text-decoration: none;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  }
+
+  .card {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+  }
+  p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.8rem;
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-bottom: 80px;
+    height: 30px;
+    opacity: 0.8;
+  }
+  .col-1 {
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+    padding: 2rem;
+  }
+  .col-2 {
+    background-color: hsl(184, 100%, 22%);
+    padding: 2rem;
+  }
+  .col-3 {
+    background-color: hsl(179, 100%, 13%);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 0px;
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 375px) {
+  h2 {
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 0;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+    margin-bottom: 30px;
+    padding-top: 200px;
+  }
+  .col-1 {
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+    padding: 2rem;
+  }
+  .col-3 {
+    background-color: hsl(179, 100%, 13%);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 0px;
+    padding: 2rem;
+  }
+}
